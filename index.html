@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>photo</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
-      margin: 0; padding: 0;
-      height: 100%; background: #000;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #000;
     }
     .wrap {
       height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
     img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
+      display: block;
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <img src="_DSF8052.JPG"alt="">
+    <!-- ここが超重要：ファイル名を完全一致させる -->
+    <img src="_DSF8052.JPG" alt="">
   </div>
 </body>
 </html>
